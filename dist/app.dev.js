@@ -48,3 +48,4 @@ connectDB();
 app.listen(process.env.PORT, function () {
   return console.log("Server running on port ".concat(process.env.PORT));
 });
+module.exports = app;
