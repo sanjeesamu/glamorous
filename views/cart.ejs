@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="/styles/style.css"> <!-- Optional -->
+</head>
+<body>
+    
+  <div class="container">
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/products">Products</a></li>
+
+        </ul>
+    </nav>
+    <h1>Your Shopping Cart</h1>
+    <% if (message) { %>
+      <p><%= message %></p>
+    <% } else { %>
+      <ul>
+        <% products.forEach(product => { %>
+          <li>
+            <h3><%= product.name %></h3>
+            <p>Quantity: <%= product.quantity %></p>
+            <p>Price: $<%= product.price %></p>
+            <p>Total: $<%= product.totalPrice %></p>
+          </li>
+        <% }) %>
+      </ul>
+    <% } %>
+  </div>
+</body>
+</html>

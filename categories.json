@@ -1,0 +1,7 @@
+[
+    { "name": "Men", "description": "Fashion items for men" },
+    { "name": "Women", "description": "Fashion items for women" },
+    { "name": "Kids", "description": "Clothing for children" },
+    { "name": "Accessories", "description": "Fashion accessories for everyone" }
+  ]
+  

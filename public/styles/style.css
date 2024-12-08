@@ -1,0 +1,180 @@
+/* Basic reset to remove margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and background color */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Container for the main content */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Heading styles */
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  h2 {
+    color: #444;
+    margin-top: 20px;
+  }
+  
+  /* Form and dropdown styling */
+  form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  form select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 250px;
+    margin-right: 10px;
+  }
+  
+  form select:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* Products listing */
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    list-style-type: none;
+  }
+  
+  ul li {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  ul li:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Product title and description */
+  ul li h3 {
+    color: #007bff;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  ul li p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* Price styling */
+  ul li .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+  }
+  
+  ul li img {
+    max-width: 100%;
+    border-radius: 4px;
+  }
+  
+/* Filter Form */
+form {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  
+  form input,
+  form select,
+  form button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  form button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Product Grid */
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    list-style-type: none;
+  }
+  
+  ul li {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  ul li h3 {
+    color: #007bff;
+  }
+  
+  ul li p.price {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+
+  .fdb-container{
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  /* Footer or bottom section */
+  footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+  }
+  

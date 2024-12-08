@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories</title>
+  <link rel="stylesheet" href="/styles/style.css"> <!-- Link to the CSS file -->
+
+</head>
+<body>
+<div class="container">
+  <nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+    </ul>
+  </nav>
+<h1>Categories</h1>
+
+<!-- Dropdown to select category -->
+<form method="GET" action="/categories">
+  <label for="category">Select Category:</label>
+  <select name="categoryId" id="category" onchange="this.form.submit()">
+    <option value="">--Select Category--</option>
+    <% categories.forEach(category => { %>
+      <option value="<%= category._id %>" <%= category._id == selectedCategory ? 'selected' : '' %>><%= category.name %></option>
+    <% }) %>
+  </select>
+</form>
+
+<% if (selectedCategory) { %>
+  <h2>Products in <%= selectedCategoryName %> category:</h2>
+  <ul>
+    <% products.forEach(product => { %>
+      <li>
+        <h3><%= product.name %></h3>
+        <p><%= product.description %></p>
+        <p>Price: $<%= product.price %></p>
+      </li>
+    <% }) %>
+  </ul>
+<% } %>
+</div>
+</body>
+</html>
