@@ -20,7 +20,7 @@ router.post('/login', adminController.login); // Admin order management (protect
 router.get('/orders', isAdminAuthenticated, adminController.getOrders); // Admin feedbacks view (protected route)
 
 router.get('/feedback', isAdminAuthenticated, adminController.getFeedbacks);
-router.post("/orders/:id/update", adminController.updateOrderStatus); // Admin dashboard
+router.post("/orders/:id/update", isAdminAuthenticated, adminController.updateOrderStatus); // Admin dashboard
 
 router.get('/dashboard', function (req, res) {
   if (!req.session.admin) {

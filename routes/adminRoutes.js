@@ -19,7 +19,7 @@ router.get('/orders', isAdminAuthenticated, adminController.getOrders);
 // Admin feedbacks view (protected route)
 router.get('/feedback',isAdminAuthenticated, adminController.getFeedbacks);
 
-router.post("/orders/:id/update", adminController.updateOrderStatus);
+router.post("/orders/:id/update",isAdminAuthenticated, adminController.updateOrderStatus);
 
 // Admin dashboard
 router.get('/dashboard', (req, res) => {
