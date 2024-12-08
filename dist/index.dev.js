@@ -44,6 +44,8 @@ app.use("/cart", cartRoutes);
 app.use('/feedback', feedbackRoutes);
 app.use('/admin', adminRoutes);
 app.use("/", homeRoutes);
-connectDB(); // Vercel expects app to be exported, not running on a listening port.
-
+connectDB();
+app.listen(process.env.PORT, function () {
+  return console.log("Server running on port ".concat(process.env.PORT));
+});
 module.exports = app;
