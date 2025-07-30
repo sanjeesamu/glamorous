@@ -1,7 +1,7 @@
 const Admin = require('../models/Admin');
 const Order = require('../models/Order');
 const Feedback = require('../models/Feedback');
-const bcrypt = require('bcrypt');
+const bcrypt = require("bcryptjs");
 const mongoose = require('mongoose');
 
 // Admin Login page
